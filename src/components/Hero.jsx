@@ -2,17 +2,16 @@ import { ArrowRight, MessageCircle, HeartPulse } from "lucide-react";
 import { siteConfig } from "../data/siteConfig";
 
 function Hero() {
-  return (
-    <section className="hero" id="home">
-      <div className="hero-background">
-        <img
-          src="/images/hero.jpg"
-          alt="Mary Immaculate Health Centre"
-          className="hero-image"
-        />
+  const base = import.meta.env.BASE_URL;
 
-        <div className="hero-overlay"></div>
-      </div>
+  return (
+    <section
+      className="hero"
+      style={{
+        backgroundImage: `url("${base}images/hero.jpg")`,
+      }}
+    >
+      <div className="hero-overlay"></div>
 
       <div className="container hero-container">
         <div className="hero-content">
@@ -27,8 +26,8 @@ function Hero() {
           </h1>
 
           <p>
-          Mary Immaculate Health Centre provides accessible, quality healthcare
-          services to individuals and families in Bahati, Nairobi.
+            Mary Immaculate Health Centre provides accessible, quality
+            healthcare services to individuals and families in Bahati, Nairobi.
           </p>
 
           <div className="hero-actions">

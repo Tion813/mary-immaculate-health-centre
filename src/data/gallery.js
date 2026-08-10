@@ -10,41 +10,43 @@
 // Delete its entry from this file.
 // ==========================================
 
+const base = import.meta.env.BASE_URL;
+
 export const galleryImages = [
-    {
-      id: 1,
-      src: "/images/gallery/hospital-1.jpg",
-      alt: "Mary Immaculate Health Centre",
-      category: "Facility",
-    },
-    {
-      id: 2,
-      src: "/images/gallery/hospital-2.jpg",
-      alt: "Mary Immaculate Health Centre facility",
-      category: "Facility",
-    },
-    {
-      id: 3,
-      src: "/images/gallery/hospital-3.jpg",
-      alt: "Healthcare services at Mary Immaculate Health Centre",
-      category: "Healthcare",
-    },
-    {
-      id: 4,
-      src: "/images/gallery/hospital-4.jpg",
-      alt: "Mary Immaculate Health Centre",
-      category: "Healthcare",
-    },
-    {
-      id: 5,
-      src: "/images/gallery/hospital-5.jpg",
-      alt: "Mary Immaculate Health Centre",
-      category: "Facility",
-    },
-    {
-      id: 6,
-      src: "/images/gallery/hospital-6.jpg",
-      alt: "Healthcare team and services",
-      category: "Healthcare",
-    },
-  ];
+  {
+    id: 1,
+    src: `${base}images/hospital.jpg`,
+    alt: "Mary Immaculate Health Centre",
+    category: "Facility",
+  },
+  {
+    id: 2,
+    src: `${base}images/maternity.jpg`,
+    alt: "Maternity services",
+    category: "Maternity",
+  },
+  {
+    id: 3,
+    src: `${base}images/outpatient.jpg`,
+    alt: "Outpatient services",
+    category: "Healthcare",
+  },
+  {
+    id: 4,
+    src: `${base}images/dental.jpg`,
+    alt: "Dental services",
+    category: "Healthcare",
+  },
+  {
+    id: 5,
+    src: `${base}images/optical.jpg`,
+    alt: "Optical services",
+    category: "Healthcare",
+  },
+  {
+    id: 6,
+    src: `${base}images/theatre.jpg`,
+    alt: "Theatre services",
+    category: "Facility",
+  },
+];
