@@ -1,19 +1,24 @@
 import { MessageCircle } from "lucide-react";
-import { siteConfig } from "../data/siteConfig";
 
 function WhatsAppButton() {
-  const whatsappLink = `https://wa.me/${siteConfig.contact.whatsapp}?text=Hello%20Mary%20Immaculate%20Health%20Centre%2C%20I%20would%20like%20to%20make%20an%20inquiry.`;
+  const phoneNumber = "254702853787";
+
+  const message =
+    "Hello Mary Immaculate Health Centre, I would like to make an inquiry.";
+
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    message
+  )}`;
 
   return (
     <a
-      href={whatsappLink}
-      className="floating-whatsapp"
+      href={whatsappUrl}
       target="_blank"
-      rel="noreferrer"
-      aria-label="Chat with Mary Immaculate Health Centre on WhatsApp"
+      rel="noopener noreferrer"
+      className="whatsapp-button"
+      aria-label="Contact Mary Immaculate Health Centre on WhatsApp"
     >
-      <MessageCircle size={25} />
-
+      <MessageCircle size={24} />
       <span>WhatsApp Us</span>
     </a>
   );

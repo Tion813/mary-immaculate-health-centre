@@ -20,10 +20,13 @@ function ServiceCard({ service }) {
 
         <p>{service.shortDescription}</p>
 
-        <a href="#contact" className="service-link">
-          Learn More
-          <ArrowUpRight size={17} />
-        </a>
+        <a
+  href={`#/services/${service.id}`}
+  className="service-link"
+>
+  Explore Services
+  <ArrowUpRight size={17} />
+</a>
       </div>
     </article>
   );
