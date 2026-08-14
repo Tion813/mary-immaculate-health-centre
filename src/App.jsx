@@ -12,8 +12,11 @@ import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
 import ServiceDetails from "./pages/ServiceDetails";
 import VisitingHours from "./components/VisitingHours";
-import FacilitiesGallery from "./components/FacilitiesGallery";
 import ServiceGallery from "./pages/ServiceGallery";
+import MissionVision from "./components/MissionVision";
+import FeedbackSection from "./components/FeedbackSection";
+import AppointmentSection from "./components/AppointmentSection";
+import AchievementsSection from "./components/AchievementsSection";
 
 function App() {
   const [hash, setHash] = useState(window.location.hash);
@@ -80,15 +83,21 @@ function App() {
 
         <AboutSection />
 
+        <MissionVision />
+
         <ServicesSection />
 
-        <FacilitiesGallery />
-
         <ClinicSchedule />
+
+        <AppointmentSection />
 
         <VisitingHours />
 
         <WhyChooseUs />
+
+        <AchievementsSection />
+
+        <FeedbackSection />
 
         <GallerySection />
 

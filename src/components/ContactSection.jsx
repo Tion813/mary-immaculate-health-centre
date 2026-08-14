@@ -1,10 +1,11 @@
 import {
-    MessageCircle,
-    Phone,
-    MapPin,
-    Clock,
-    ArrowUpRight,
-  } from "lucide-react";
+  MessageCircle,
+  Phone,
+  MapPin,
+  Clock,
+  ArrowUpRight,
+  Music2,
+} from "lucide-react";
   
   import { siteConfig } from "../data/siteConfig";
   
@@ -128,6 +129,19 @@ import {
 <span>Visit us on Facebook</span>
 <ArrowUpRight size={17} />
               </a>
+
+              {/* TikTok */}
+<a
+  href="https://www.tiktok.com/@mary_immaculate_bahati"
+  className="contact-social tiktok-social"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Visit Mary Immaculate Health Centre on TikTok"
+>
+  <Music2 size={19} />
+  <span>Follow us on TikTok</span>
+  <ArrowUpRight size={17} />
+</a>
   
             </div>
   

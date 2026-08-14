@@ -3467,3 +3467,1230 @@ a.contact-card:hover {
     padding: 11px 17px !important;
   }
 }
+
+/* ==========================================
+   MISSION, VISION & CORE VALUES
+========================================== */
+
+.mission-vision-section {
+  padding: 90px 0;
+  background: #f8fafc;
+}
+
+
+/* ==========================================
+   MISSION & VISION
+========================================== */
+
+.mission-vision-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.mission-vision-card {
+  padding: 38px;
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+
+  box-shadow: 0 10px 35px rgba(15, 23, 42, 0.06);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.mission-vision-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.1);
+}
+
+.mission-vision-icon {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 22px;
+
+  border-radius: 14px;
+
+  background: #e6fffa;
+  color: #0f766e;
+}
+
+.mission-vision-label {
+  display: block;
+  margin-bottom: 10px;
+
+  color: #0f766e;
+
+  font-size: 0.82rem;
+  font-weight: 800;
+
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+
+.mission-vision-card h3 {
+  margin: 0 0 16px;
+
+  color: #0f172a;
+
+  font-size: 1.45rem;
+  line-height: 1.35;
+}
+
+.mission-vision-card p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+
+/* ==========================================
+   CORE VALUES HEADER
+========================================== */
+
+.core-values-header {
+  margin-top: 75px;
+  margin-bottom: 35px;
+}
+
+.core-values-header h2 {
+  margin-top: 8px;
+}
+
+
+/* ==========================================
+   CORE VALUES GRID
+========================================== */
+
+.core-values-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+}
+
+.core-value-card {
+  padding: 28px 22px;
+
+  border-radius: 16px;
+
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+
+  text-align: center;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.core-value-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
+}
+
+.core-value-icon {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 18px;
+
+  border-radius: 50%;
+
+  background: #e6fffa;
+  color: #0f766e;
+}
+
+.core-value-card h3 {
+  margin: 0 0 12px;
+
+  color: #0f172a;
+
+  font-size: 1.05rem;
+}
+
+.core-value-card p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 1000px) {
+  .core-values-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 750px) {
+  .mission-vision-section {
+    padding: 70px 0;
+  }
+
+  .mission-vision-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 35px;
+  }
+
+  .mission-vision-card {
+    padding: 30px 25px;
+  }
+
+  .core-values-header {
+    margin-top: 55px;
+  }
+
+  .core-values-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .core-value-card {
+    padding: 25px 22px;
+  }
+}
+
+/* ==========================================
+   CUSTOMER FEEDBACK SECTION
+========================================== */
+
+.feedback-section {
+  background: #f8fafc;
+}
+
+.feedback-wrapper {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 45px;
+  align-items: start;
+  margin-top: 50px;
+}
+
+
+/* ==========================================
+   FEEDBACK INTRO
+========================================== */
+
+.feedback-intro {
+  padding: 40px 30px;
+}
+
+.feedback-intro-icon {
+  width: 64px;
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 25px;
+
+  border-radius: 16px;
+
+  background: #e6fffa;
+  color: #0f766e;
+}
+
+.feedback-intro h3 {
+  margin: 0 0 18px;
+
+  color: #0f172a;
+
+  font-size: 1.7rem;
+  line-height: 1.3;
+}
+
+.feedback-intro > p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.feedback-note {
+  margin-top: 30px;
+  padding: 20px;
+
+  border-left: 4px solid #0f766e;
+
+  background: #ffffff;
+  border-radius: 0 12px 12px 0;
+}
+
+.feedback-note strong {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #0f172a;
+}
+
+.feedback-note p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+
+/* ==========================================
+   FORM CARD
+========================================== */
+
+.feedback-form-card {
+  padding: 40px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+
+  box-shadow: 0 12px 40px rgba(15, 23, 42, 0.07);
+}
+
+
+/* ==========================================
+   FORM FIELDS
+========================================== */
+
+.feedback-field {
+  margin-bottom: 22px;
+}
+
+.feedback-field label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #0f172a;
+
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.required {
+  margin-left: 4px;
+
+  color: #dc2626;
+}
+
+.feedback-field input,
+.feedback-field select,
+.feedback-field textarea {
+  width: 100%;
+
+  padding: 13px 15px;
+
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  color: #0f172a;
+
+  font-family: inherit;
+  font-size: 0.95rem;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.feedback-field input:focus,
+.feedback-field select:focus,
+.feedback-field textarea:focus {
+  border-color: #0f766e;
+
+  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.1);
+}
+
+.feedback-field textarea {
+  min-height: 140px;
+
+  resize: vertical;
+}
+
+.feedback-field input::placeholder,
+.feedback-field textarea::placeholder {
+  color: #94a3b8;
+}
+
+
+/* ==========================================
+   TWO-COLUMN FORM ROW
+========================================== */
+
+.feedback-form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+
+/* ==========================================
+   STAR RATING
+========================================== */
+
+.star-rating {
+  display: flex;
+  align-items: center;
+
+  gap: 5px;
+
+  margin-top: 4px;
+}
+
+.star-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 4px;
+
+  border: none;
+  background: transparent;
+
+  color: #f59e0b;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+.star-button:hover {
+  transform: scale(1.15);
+}
+
+.feedback-field small {
+  display: block;
+
+  margin-top: 7px;
+
+  color: #64748b;
+
+  font-size: 0.8rem;
+}
+
+
+/* ==========================================
+   SUBMIT BUTTON
+========================================== */
+
+.feedback-submit-button {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  padding: 14px 22px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #0f766e;
+  color: #ffffff;
+
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.feedback-submit-button:hover {
+  background: #115e59;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 20px rgba(15, 118, 110, 0.2);
+}
+
+
+/* ==========================================
+   SUCCESS MESSAGE
+========================================== */
+
+.feedback-success {
+  min-height: 480px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px;
+
+  text-align: center;
+}
+
+.feedback-success-icon {
+  width: 80px;
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 22px;
+
+  border-radius: 50%;
+
+  background: #e6fffa;
+  color: #0f766e;
+}
+
+.feedback-success h3 {
+  margin: 0 0 12px;
+
+  color: #0f172a;
+
+  font-size: 1.5rem;
+}
+
+.feedback-success p {
+  max-width: 450px;
+
+  margin: 0 0 25px;
+
+  color: #64748b;
+
+  line-height: 1.7;
+}
+
+.feedback-another-button {
+  padding: 12px 22px;
+
+  border: 1px solid #0f766e;
+  border-radius: 9px;
+
+  background: transparent;
+  color: #0f766e;
+
+  font-family: inherit;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.feedback-another-button:hover {
+  background: #0f766e;
+  color: #ffffff;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 900px) {
+  .feedback-wrapper {
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+  }
+
+  .feedback-intro {
+    padding: 10px 0;
+  }
+
+  .feedback-form-card {
+    padding: 30px;
+  }
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+  .feedback-section {
+    padding: 65px 0;
+  }
+
+  .feedback-wrapper {
+    margin-top: 35px;
+  }
+
+  .feedback-form-card {
+    padding: 22px 18px;
+
+    border-radius: 15px;
+  }
+
+  .feedback-form-row {
+    grid-template-columns: 1fr;
+
+    gap: 0;
+  }
+
+  .feedback-intro h3 {
+    font-size: 1.45rem;
+  }
+
+  .star-rating {
+    gap: 2px;
+  }
+
+  .star-button {
+    padding: 3px;
+  }
+
+  .star-button svg {
+    width: 29px;
+    height: 29px;
+  }
+}
+
+/* ==========================================
+   APPOINTMENT SECTION
+========================================== */
+
+.appointment-section {
+  position: relative;
+}
+
+.appointment-wrapper {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 50px;
+  align-items: stretch;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ==========================================
+   APPOINTMENT INFORMATION
+========================================== */
+
+.appointment-info {
+  background: #0f766e;
+  color: #ffffff;
+  border-radius: 18px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 15px 35px rgba(15, 118, 110, 0.15);
+}
+
+.appointment-info-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.appointment-info h3 {
+  font-size: 28px;
+  margin: 0 0 15px;
+  color: #ffffff;
+}
+
+.appointment-info > p {
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.appointment-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.appointment-info-item svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.appointment-info-item div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.appointment-info-item strong {
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.appointment-info-item span {
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+/* ==========================================
+   APPOINTMENT FORM CARD
+========================================== */
+
+.appointment-form-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 40px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+}
+
+.appointment-form-card form {
+  width: 100%;
+}
+
+.appointment-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.appointment-field {
+  margin-bottom: 20px;
+}
+
+.appointment-field label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.appointment-field .required {
+  color: #dc2626;
+}
+
+/* ==========================================
+   INPUTS
+========================================== */
+
+.appointment-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.appointment-input-wrapper svg {
+  position: absolute;
+  left: 14px;
+  color: #0f766e;
+  pointer-events: none;
+}
+
+.appointment-input-wrapper input {
+  width: 100%;
+  padding: 13px 14px 13px 44px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #1f2937;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.appointment-field select,
+.appointment-field textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #1f2937;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.appointment-field textarea {
+  resize: vertical;
+  min-height: 120px;
+  line-height: 1.6;
+}
+
+.appointment-input-wrapper input:focus,
+.appointment-field select:focus,
+.appointment-field textarea:focus {
+  border-color: #0f766e;
+  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.1);
+}
+
+.appointment-input-wrapper input::placeholder,
+.appointment-field textarea::placeholder {
+  color: #9ca3af;
+}
+
+/* ==========================================
+   DISCLAIMER
+========================================== */
+
+.appointment-disclaimer {
+  background: #f0fdfa;
+  border-left: 4px solid #0f766e;
+  padding: 13px 15px;
+  margin: 5px 0 20px;
+  border-radius: 6px;
+  color: #475569;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.appointment-disclaimer strong {
+  color: #0f766e;
+}
+
+/* ==========================================
+   SUBMIT BUTTON
+========================================== */
+
+.appointment-submit-button {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 20px;
+  background: #0f766e;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.appointment-submit-button:hover {
+  background: #115e59;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(15, 118, 110, 0.2);
+}
+
+.appointment-submit-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* ==========================================
+   SUCCESS MESSAGE
+========================================== */
+
+.appointment-success {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 55px 40px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+}
+
+.appointment-success-icon {
+  width: 76px;
+  height: 76px;
+  margin: 0 auto 22px;
+  border-radius: 50%;
+  background: #ecfdf5;
+  color: #0f766e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.appointment-success h2 {
+  margin: 0 0 15px;
+  color: #1f2937;
+}
+
+.appointment-success p {
+  max-width: 580px;
+  margin: 0 auto 28px;
+  color: #64748b;
+  line-height: 1.7;
+}
+
+.appointment-another-button {
+  border: none;
+  background: #0f766e;
+  color: #ffffff;
+  padding: 12px 22px;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.appointment-another-button:hover {
+  background: #115e59;
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 900px) {
+  .appointment-wrapper {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .appointment-info {
+    padding: 32px;
+  }
+
+  .appointment-form-card {
+    padding: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .appointment-form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .appointment-info,
+  .appointment-form-card {
+    padding: 25px 20px;
+  }
+
+  .appointment-info h3 {
+    font-size: 24px;
+  }
+
+  .appointment-success {
+    padding: 40px 22px;
+  }
+}
+
+/* ==========================================
+   ACHIEVEMENTS SECTION
+========================================== */
+
+.achievements-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.achievements-header {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1150px;
+  margin: 45px auto 0;
+}
+
+/* ==========================================
+   ACHIEVEMENT CARD
+========================================== */
+
+.achievement-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 285px;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 20px;
+
+  border: 1px solid rgba(212, 175, 55, 0.42);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.72),
+      rgba(255, 250, 225, 0.38)
+    );
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  box-shadow:
+    0 8px 30px rgba(212, 175, 55, 0.08),
+    inset 0 0 25px rgba(255, 215, 0, 0.035);
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-7px);
+
+  border-color: rgba(212, 175, 55, 0.8);
+
+  box-shadow:
+    0 15px 40px rgba(212, 175, 55, 0.16),
+    0 0 30px rgba(212, 175, 55, 0.12),
+    inset 0 0 30px rgba(255, 215, 0, 0.05);
+}
+
+/* Decorative glow */
+
+.achievement-card-glow {
+  position: absolute;
+
+  width: 130px;
+  height: 130px;
+
+  top: -65px;
+  right: -65px;
+
+  border-radius: 50%;
+
+  background: rgba(212, 175, 55, 0.12);
+
+  filter: blur(25px);
+
+  pointer-events: none;
+}
+
+/* ==========================================
+   TOP AREA
+========================================== */
+
+.achievement-top {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 25px;
+}
+
+.achievement-icon {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 16px;
+
+  color: #b8860b;
+
+  background: rgba(212, 175, 55, 0.12);
+
+  border: 1px solid rgba(212, 175, 55, 0.35);
+
+  box-shadow:
+    0 0 20px rgba(212, 175, 55, 0.14);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.achievement-card:hover .achievement-icon {
+  transform: scale(1.05);
+
+  box-shadow:
+    0 0 25px rgba(212, 175, 55, 0.28);
+}
+
+.achievement-year {
+  padding: 6px 11px;
+
+  border-radius: 20px;
+
+  color: #9a7610;
+
+  background: rgba(212, 175, 55, 0.09);
+
+  border: 1px solid rgba(212, 175, 55, 0.22);
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.achievement-content {
+  position: relative;
+  z-index: 1;
+}
+
+.achievement-category {
+  display: inline-block;
+
+  margin-bottom: 9px;
+
+  color: #a17b11;
+
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.achievement-content h3 {
+  margin: 0 0 12px;
+
+  color: #1f2937;
+
+  font-size: 21px;
+  line-height: 1.3;
+}
+
+.achievement-content p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* ==========================================
+   CARD NUMBER
+========================================== */
+
+.achievement-number {
+  position: absolute;
+
+  right: 20px;
+  bottom: 8px;
+
+  color: rgba(212, 175, 55, 0.09);
+
+  font-size: 70px;
+  font-weight: 800;
+  line-height: 1;
+
+  pointer-events: none;
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 1000px) {
+  .achievements-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 650px) {
+  .achievements-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 35px;
+  }
+
+  .achievement-card {
+    min-height: 260px;
+    padding: 25px;
+  }
+
+  .achievement-content h3 {
+    font-size: 19px;
+  }
+}
+
+/* ==========================================
+   TIKTOK CONTACT LINK
+========================================== */
+
+.tiktok-social {
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.tiktok-social svg:first-child {
+  transition: transform 0.25s ease;
+}
+
+.tiktok-social:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    3px 3px 0 rgba(37, 244, 238, 0.65),
+    -3px -3px 0 rgba(254, 44, 85, 0.65);
+}
+
+.tiktok-social:hover svg:first-child {
+  transform: scale(1.08);
+}
