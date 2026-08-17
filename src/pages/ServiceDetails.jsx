@@ -65,24 +65,20 @@ import {
                 </p>
   
                 <div className="service-details-hero-actions">
-  
+                  <a
+                    href={`${base}#/services/${service.id}/gallery`}
+                    className="btn btn-outline"
+                  >
+                    View Service Gallery
+                  </a>
 
-  <div className="service-details-hero-actions">
-  <a
-    href={`${base}#/services/${service.id}/gallery`}
-    className="btn btn-outline"
-  >
-    View Service Gallery
-  </a>
-
-  <a
-    href={`${base}#contact`}
-    className="btn btn-primary"
-  >
-    Contact Us
-  </a>
-</div>
-</div>
+                  <a
+                    href={`${base}#contact`}
+                    className="btn btn-primary"
+                  >
+                    Contact Us
+                  </a>
+                </div>
               </div>
   
               <div className="service-details-hero-image">

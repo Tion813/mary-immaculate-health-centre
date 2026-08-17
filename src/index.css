@@ -190,6 +190,13 @@ h2 {
   background: var(--color-navy);
 }
 
+.service-details-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 28px;
+}
+
 /* ---------- Accessibility ---------- */
 
 :focus-visible {

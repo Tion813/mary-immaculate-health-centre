@@ -33,6 +33,12 @@ function App() {
     };
   }, []);
 
+  useEffect(() => {
+    if (hash.startsWith("#/services/")) {
+      window.scrollTo(0, 0);
+    }
+  }, [hash]);
+
   // ==========================================
   // SERVICE ROUTING
   // ==========================================

@@ -10,6 +10,9 @@ function Header() {
     { name: "About Us", href: "#about" },
     { name: "Services", href: "#services" },
     { name: "Clinics", href: "#clinics" },
+    { name: "Appointments", href: "#appointments" },
+    { name: "Achievements", href: "#achievements" },
+    { name: "Feedback", href: "#feedback" },
     { name: "Gallery", href: "#gallery" },
     { name: "Contact", href: "#contact" },
   ];
