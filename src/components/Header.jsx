@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { siteConfig } from "../data/siteConfig";
+import hospitalLogo from "../assets/mary-immaculate-logo-256.jpg";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -17,6 +18,14 @@ function Header() {
     { name: "Contact", href: "#contact" },
   ];
 
+  const primaryNavigation = navigation.filter(({ name }) =>
+    ["Home", "About Us", "Services", "Appointments", "Contact"].includes(name),
+  );
+
+  const secondaryNavigation = navigation.filter(
+    ({ name }) => !["Home", "About Us", "Services", "Appointments", "Contact"].includes(name),
+  );
+
   const closeMenu = () => {
     setMenuOpen(false);
   };
@@ -28,7 +37,7 @@ function Header() {
         {/* Logo / Hospital Name */}
         <a href="#home" className="logo" onClick={closeMenu}>
           <div className="logo-mark">
-            <span>MI</span>
+            <img src={hospitalLogo} alt="Mary Immaculate Hospital Bahati logo" />
           </div>
 
           <div className="logo-text">
@@ -39,11 +48,22 @@ function Header() {
 
         {/* Desktop Navigation */}
         <nav className="desktop-navigation">
-          {navigation.map((item) => (
+          {primaryNavigation.map((item) => (
             <a key={item.name} href={item.href}>
               {item.name}
             </a>
           ))}
+
+          <details className="desktop-more-navigation">
+            <summary>More</summary>
+            <div className="desktop-more-menu">
+              {secondaryNavigation.map((item) => (
+                <a key={item.name} href={item.href}>
+                  {item.name}
+                </a>
+              ))}
+            </div>
+          </details>
         </nav>
 
         {/* Desktop Contact Button */}

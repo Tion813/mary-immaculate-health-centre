@@ -22,9 +22,10 @@ export const siteConfig = {
     // and is being used for development/testing.
     contact: {
       whatsapp: "254702853787",
-      phone: "25470285378",
+      phone: "+254725878014",
+      phoneDisplay: "0725 878 014",
       email: "jmwathi813@gmail.com",
-      address: "",
+      address: "Maringo, Jogoo Road, Nairobi",
       workingHours: "24 hours",
       mapsUrl: "https://maps.app.goo.gl/5Cooc3ThHFm8m2ZR7",
       mapsEmbed:

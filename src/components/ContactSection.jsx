@@ -68,7 +68,9 @@ import {
   
                   <div>
                     <span>Call Us</span>
-                    <strong>{siteConfig.contact.phone}</strong>
+                    <strong>
+                      {siteConfig.contact.phoneDisplay || siteConfig.contact.phone}
+                    </strong>
                     <small>Speak directly with our team</small>
                   </div>
                 </a>
@@ -98,7 +100,7 @@ import {
                     {siteConfig.contact.address || "Bahati, Kenya"}
                   </strong>
   
-                  <small>Physical address coming soon</small>
+                  <small>Use the map below for directions</small>
                 </div>
               </div>
   

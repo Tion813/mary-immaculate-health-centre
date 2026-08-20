@@ -6,6 +6,7 @@ function Hero() {
 
   return (
     <section
+      id="home"
       className="hero"
       style={{
         backgroundImage: `url("${base}images/hero.jpg")`,

@@ -257,22 +257,22 @@ h2 {
     flex-shrink: 0;
   }
   
-  .logo-mark {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 48px;
-    height: 48px;
-    color: var(--color-white);
-    background: var(--color-navy);
-    border-radius: 50%;
-    font-weight: 800;
-    font-size: 0.9rem;
-  }
-  
-  .logo-mark span {
-    position: relative;
-  }
+.logo-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.logo-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
   
   .logo-text {
     display: flex;
@@ -324,9 +324,67 @@ h2 {
     color: var(--color-navy);
   }
   
-  .desktop-navigation a:hover::after {
-    width: 100%;
-  }
+.desktop-navigation a:hover::after {
+  width: 100%;
+}
+
+.desktop-more-navigation {
+  position: relative;
+}
+
+.desktop-more-navigation summary {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--color-text);
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  list-style: none;
+}
+
+.desktop-more-navigation summary::-webkit-details-marker {
+  display: none;
+}
+
+.desktop-more-navigation summary::after {
+  content: "⌄";
+  color: var(--color-green);
+  font-size: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.desktop-more-navigation[open] summary::after {
+  transform: rotate(180deg);
+}
+
+.desktop-more-menu {
+  position: absolute;
+  top: calc(100% + 18px);
+  right: -14px;
+  display: grid;
+  min-width: 155px;
+  padding: 8px;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-md);
+}
+
+.desktop-more-menu a {
+  display: block;
+  padding: 10px 12px;
+  white-space: nowrap;
+}
+
+.desktop-more-menu a::after {
+  display: none;
+}
+
+.desktop-more-menu a:hover {
+  background: var(--color-background);
+  border-radius: var(--radius-sm);
+}
   
   /* ---------- Header Action ---------- */
   
@@ -376,9 +434,13 @@ h2 {
       gap: 18px;
     }
   
-    .desktop-navigation a {
-      font-size: 0.84rem;
-    }
+  .desktop-navigation a {
+    font-size: 0.84rem;
+  }
+
+  .desktop-more-navigation summary {
+    font-size: 0.84rem;
+  }
   
     .header-call {
       padding: 10px 14px;

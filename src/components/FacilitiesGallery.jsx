@@ -23,7 +23,7 @@ function FacilitiesGallery() {
     {
       title: "Maternity Services",
       category: "Maternity",
-      image: `${base}images/maternity.jpg`,
+      image: `${base}public/images/hospital.jpg`,
     },
     {
       title: "Theatre",

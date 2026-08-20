@@ -105,24 +105,38 @@ import {
         </div>
   
         {/* Bottom Footer */}
-        <div className="footer-bottom">
-  
-          <div className="container footer-bottom-content">
-  
-            <p>
-              © {new Date().getFullYear()} Mary Immaculate Health Centre.
-              All rights reserved.
-            </p>
-  
-            <a href="#home" className="back-to-top">
-              Back to top
-              <ArrowUp size={16} />
-            </a>
-  
-          </div>
-  
-        </div>
-  
+        <div className="container footer-bottom-content">
+
+  <div className="footer-legal">
+    <p>
+      © {new Date().getFullYear()} Mary Immaculate Health Centre.
+      All rights reserved.
+    </p>
+
+    <a href="#privacy" className="footer-privacy-link">
+      Privacy Policy
+    </a>
+  </div>
+
+  <div className="footer-credit">
+    <span>Powered by</span>
+
+    <a
+      href="https://github.com/Tion813"
+      target="_blank"
+      rel="noreferrer"
+      aria-label="Powered by DevSphere Digital"
+    >
+      DevSphere Digital
+    </a>
+  </div>
+
+  <a href="#home" className="back-to-top">
+    Back to top
+    <ArrowUp size={16} />
+  </a>
+
+</div>
       </footer>
     );
   }

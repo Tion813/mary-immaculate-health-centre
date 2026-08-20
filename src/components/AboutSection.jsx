@@ -29,7 +29,7 @@ function AboutSection() {
           <div className="about-image-wrapper">
             <div className="about-image-main">
               <img
-                src="images/hospital.JPG"
+                src="images/hospital/hospital.jpeg"
                 alt="Mary Immaculate Health Centre"
               />
             </div>
